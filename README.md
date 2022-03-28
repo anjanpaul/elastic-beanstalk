@@ -38,7 +38,7 @@ $ cd folder-name
 copy all the source code on your created directory
 
 ### Step 5
-check your Souce code safely and on this folder and initialize git using bellow command
+check your Souce code safely and on this folder initialize git using bellow command
 
 ```
 $ git init
