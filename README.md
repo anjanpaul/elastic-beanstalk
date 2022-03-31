@@ -178,6 +178,30 @@ eb health
 ```
 ![alt text](https://github.com/anjanpaul/elastic-beanstalk/blob/main/output/Screenshot%202022-03-30%20at%204.00.41%20PM.png)
 
+To show application logs please run this command on cli:
+
+```
+eb logs
+
+```
+Scales the environment to always run on a specified number of instances, setting both the minimum and maximum number of instances to the specified number.
+
+```
+eb scale 2
+
+```
+for check environment events run this command on cli:
+```
+eb events
+
+```
+show environment in list:
+
+```
+eb lists
+
+```
+
 ## Terminate your application
 In this step, you will terminate your sample application using the Elastic Beanstalk CLI. Terminating resources that are not actively being used reduces costs and is a best practice.
 ```
