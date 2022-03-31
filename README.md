@@ -154,6 +154,38 @@ $ git commit "your commit message"
 $ eb deploy --staged
 
 ```
-and good to go :)
+## Monitor your application
+In this step, you will confirm the deployment of your sample application and monitor the health of your application using the Elastic Beanstalk CLI.
 
+a.   Using the terminal, open your live application in a browser by entering the following command:
+```
+eb open
 
+```
+This page is for the php sample application. If you picked a different platform, your application may look different.
+
+b.  To view the status of the application the Elastic Beanstalk CLI has created for you, enter the following command:
+```
+eb status
+
+```
+
+c.  To view the health of the computing resources the Elastic Beanstalk CLI has created for you, enter the following command:
+```
+eb health
+
+```
+
+## Terminate your application
+In this step, you will terminate your sample application using the Elastic Beanstalk CLI. Terminating resources that are not actively being used reduces costs and is a best practice.
+```
+eb terminate --all
+
+```
+
+Then type in the name of your application. The Elastic Beanstalk CLI will now delete the running resources and application and output the events to the command line. When the termination is complete the Elastic Beanstalk CLI will output:
+
+```
+INFO: The application has been deleted successfully.
+
+```
